@@ -6,8 +6,9 @@
 </head>
 <body>
 
-<h1>Coding Events</h1>
+<h1>All Events</h1>
 
+<p th:unless="${events} and ${events.size()}">No Events!</p>
 <nav>
     <ul>
         <li th:each="event: ${events}" th:text="${event}"><a>All Events</a></li>
