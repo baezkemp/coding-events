@@ -4,8 +4,10 @@
     <meta charset="UTF-8"/>
     <title>Coding events</title>
 
-    <script th:scr="@{/script.js}"></script>
-    <link th:href="@{/styles.css}" rel="stylesheet">
+<!--    <script th:scr="@{/script.js}"></script>-->
+<!--    <link th:href="@{/styles.css}" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -13,7 +15,7 @@
 
 <header th:fragment="header">
     <h1>Coding Events</h1>
-    <ul>
+    <ul class="nav">
         <li class="nav-item"><a class="nav-link" href="/events">All Events</a></li>
         <li class="nav-item"><a class="nav-link" href="/events/create">Create Events</a></li>
         <li class="nav-item"><a class="nav-link" href="/events/delete">Delete Events</a></li>
