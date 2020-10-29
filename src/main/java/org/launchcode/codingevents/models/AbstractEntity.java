@@ -12,6 +12,10 @@ public abstract class AbstractEntity {
     @GeneratedValue
     private int id;
 
+    public int getId() {
+        return id;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -20,12 +24,9 @@ public abstract class AbstractEntity {
         return id == entity.id;
     }
 
-    public int getId() {
-        return id;
-    }
-
     @Override
     public int hashCode() {
         return Objects.hash(id);
     }
+
 }
