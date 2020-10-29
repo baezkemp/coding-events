@@ -7,8 +7,8 @@
 
 <table class="table table-striped">
     <tr>
-        <th>ID</th>
-        <td th:text="${event.id}"></td>
+        <th>Category</th>
+        <td th:text="${event.eventCategory}"></td>
     </tr>
     <tr>
         <th>Description</th>
@@ -17,6 +17,10 @@
     <tr>
         <th>Contact Email</th>
         <td th:text="${event.eventDetails.contactEmail}"></td>
+    </tr>
+    <tr>
+        <th>Tags</th>
+        <td th:text="${event.tags}"></td>
     </tr>
 </table>
 
